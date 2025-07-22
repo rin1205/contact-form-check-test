@@ -14,11 +14,11 @@
 5. php artisan migrate --seed
 
 ## 使用技術
-Laravel 8.83.29
-PHP 7.4.9
-MariaDB 10.3.39（MySQL互換）
-Docker
-Composer 2.8.9
+Laravel 8.83.29  
+PHP 7.4.9  
+MariaDB 10.3.39（MySQL互換）  
+Docker  
+Composer 2.8.9  
 Laravel Fortify 
 
 ## ER図
