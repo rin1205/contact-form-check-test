@@ -1,0 +1,75 @@
+/* 全体 */
+.thanks__content {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* テキスト中央揃え */
+    text-align: center;
+    /* 中央固定配置 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 自身の幅・高さを半分戻して中央に配置 */
+    transform: translate(-50%, -50%);
+}
+
+/* サンクスメッセージ */
+.thanks__message {
+    /* 下に余白 */
+    margin-bottom: 30px;
+    /* フォントサイズ */
+    font-size: 22px;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* 背景テキスト用 */
+    position: relative;
+    /* 背景テキストより前面表示 */
+    z-index: 1;
+    /* フォント指定 */
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, sans-serif;
+}
+
+/* ホームボタン */
+.home-button {
+    /* 内側の余白 */
+    padding: 10px 30px;
+    /* 枠線なし */
+    border: none;
+    /* 背景色 */
+    background: #745f4d;
+    /* 文字色 */
+    color: #fff;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+    /* フォントサイズ */
+    font-size: 16px;
+    /* リンクの下線削除 */
+    text-decoration: none;
+    /* 背景テキスト用 */
+    position: relative;
+    /* 背景テキストより前面表示 */
+    z-index: 1;
+}
+
+/* 背景テキスト */
+.thanks__content::before {
+    /* 表示テキスト */
+    content: "Thank you";
+    position: absolute;
+    /* フォントサイズ */
+    font-size: 180px;
+    /* 文字色 */
+    color: #eee;
+    top: 50%;
+    left: 50%;
+    /* 自身の幅・高さを半分戻して中央に配置 */
+    transform: translate(-50%, -50%);
+    /* 最背面表示 */
+    z-index: 0;
+    /* クリック妨害防止 */
+    pointer-events: none;
+    /* 改行なし */
+    white-space: nowrap;
+    /* フォント指定 */
+    font-family: 'Spectral', serif;
+}
+

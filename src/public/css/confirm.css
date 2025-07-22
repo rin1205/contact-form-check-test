@@ -1,0 +1,143 @@
+/* フォーム全体 */
+.confirm__content {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* 余白 */
+    padding: 30px;
+    /* 最大幅指定 */
+    max-width: 850px;
+}
+/* 見出しデザイン */
+.confirm__heading {
+    /* 見出し下の余白 */
+    margin-bottom: 40px;
+    /* テキスト中央揃え */
+    text-align: center;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* 見出しフォント指定 */
+    font-family: 'Spectral', serif;
+    /* 見出しフォントサイズ */
+    font-size: 22px;
+}
+/* フォーム全体 */
+.form {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* 文字色 */
+    color: #4a3c30;
+}
+/* テーブル全体の枠線 */
+.confirm-table {
+    border: 1px solid #ddd;
+}
+/* テーブル内部 */
+.confirm-table__inner {
+    /* 幅指定 */
+    width: 100%;
+    /* 境界線共有：一本線 */
+    border-collapse: collapse;
+}
+/* テーブル見出しセル */
+.confirm-table__header {
+    /* 内側の余白 */
+    padding: 20px 50px;
+    /* 幅指定 */
+    width: 30%;
+    /* テキスト左寄せ */
+    text-align: left;
+    /* セルの下線 */
+    border-bottom: 1px solid #ddd;
+    /* 背景色 */
+    background: #ad9a8c;
+    /* 文字色 */
+    color: #fff;
+}
+/* テーブルの値セル */
+.confirm-table__text {
+    /* セルの下線 */
+    border-bottom: 1px solid #ddd;
+    /* テキスト左寄せ */
+    text-align: left;
+    /* 左右に余白 */
+    padding: 0 40px;
+}
+/* テーブル内の入力欄 */
+.confirm-table__text input {
+    /* 枠線なし */
+    border: none;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* フォントサイズ */
+    font-size: 14px;
+}
+/* テーブル内のテキストエリア */
+.confirm-table__text textarea {
+    /* 幅指定 */
+    width: 100%;
+    /* 枠線なし */
+    border: none;
+    /* リサイズなし */
+    resize: none;
+    /* フォントサイズ */
+    font-size: 14px;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* 行間指定 */
+    line-height: 1.6;
+    /* テキスト内容に応じて高さ自動調整 */
+    field-sizing: content;
+    /* フォント指定 */
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, sans-serif;
+}
+/* 最終行の枠線を削除 */
+.confirm-table__row:last-child .confirm-table__header,
+.confirm-table__row:last-child .confirm-table__text {
+    border-bottom-width: 0;
+}
+/* ボタンエリア */
+.form__button {
+    /* 上に余白 */
+    margin-top: 30px;
+    /* 中央揃え */
+    text-align: center;
+}
+/* 送信ボタン */
+.form__button-submit {
+    /* 右側に余白 */
+    margin-right: 30px;
+    /* 内側の余白 */
+    padding: 5px 30px;
+    /* 枠線なし */
+    border: none;
+    /* 背景色 */
+    background: #745f4d;
+    /* 文字色 */
+    color: #fff;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+    /* フォントサイズ */
+    font-size: 16px;
+}
+/* 修正ボタン */
+.modify-button {
+    /* 文字色 */
+    color: #745f4d;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+}
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    /* 全体の余白と幅を調整 */
+    .confirm__content {
+        padding: 20px;
+        width: 95%;
+    }
+
+    /* フォーム幅をスマホ画面にフィット */
+    .form {
+        width: 100%;
+    }
+}

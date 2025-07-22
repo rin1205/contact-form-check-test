@@ -1,0 +1,382 @@
+/* 全体 */
+.admin__content {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* 余白 */
+    padding: 20px;
+    /* 最大幅指定 */
+    max-width: 1230px;
+    /* フォント指定 */
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, sans-serif;
+}
+
+/* 見出しデザイン */
+.admin__heading {
+    /* 見出し下の余白 */
+    margin-bottom: 30px;
+    /* テキスト中央寄せ */
+    text-align: center;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* 見出しフォント指定 */
+    font-family: 'Spectral', serif;
+    /* 見出しフォントサイズ */
+    font-size: 22px;
+}
+
+/* 検索フォーム */
+.admin__search {
+    /* 横並び */
+    display: flex;
+    /* 要素間の余白 */
+    gap: 20px;
+    /* 折り返し可能に */
+    flex-wrap: wrap;
+    /* 下に余白 */
+    margin-bottom: 20px;
+    /* 均等配置 */
+    justify-content: space-between;
+}
+
+/* 検索フォーム入力欄・セレクトボックス・日付入力欄共通スタイル */
+.admin__search input,
+.admin__search select,
+.admin__search input[type="date"] {
+    /* 高さ指定 */
+    height: 42px;
+    /* 内側の余白 */
+    padding: 10px;
+    /* paddingを含めて高さ・幅を計算 */
+    box-sizing: border-box;
+    /* フォントサイズ */
+    font-size: 15px;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* 背景色 */
+    background: #f3f2f2;
+    /* 枠線 */
+    border: 1px solid #ddd5ce;
+}
+
+/* テキスト入力欄 */
+.admin__search input[type="text"] {
+    /* 基本幅350px：余白に応じて伸縮 */
+    flex: 2 1 350px;
+    /* 最小幅指定 */
+    min-width: 300px;
+}
+
+/* セレクトボックスと日付入力欄 */
+.admin__search .selectbox,
+.admin__search input[type="date"] {
+    /* 基本幅150px：余白に応じて伸縮 */
+    flex: 1 1 150px;
+}
+/*
+/* ▼ を追加するためのラッパー
+.selectbox {
+    position: relative;
+    flex: 1 1 150px;
+}
+ */
+/* ▼ のデザイン（border版）
+.selectbox::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #6d5b4c;
+    border-left: 2px solid #6d5b4c;
+    transform: translateY(-50%) rotate(-135deg);
+    pointer-events: none;
+}
+ */
+/* セレクトボックス本体 */
+.selectbox select {
+    /*デフォルトの矢印削除
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* 幅指定 */
+    width: 100%;
+    /* 内側の余白 */
+    padding: 10px;
+    /* 
+    padding-right: 30px; /* ▼の分の余白を確保 */
+    /* 枠線 */
+    border: 1px solid #ddd5ce;
+    /* 背景色 */
+    background: #f3f2f2;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* フォントサイズ */
+    font-size: 15px;
+    /* paddingを含めてサイズ計算 */
+    box-sizing: border-box;
+}
+
+/* 検索ボタン */
+.search__button {
+    /* 内側の余白 */
+    padding: 10px 30px;
+    /* 枠線なし */
+    border: none;
+    /* 文字色 */
+    color: #fff;
+    /* 背景色 */
+    background: #6d5b4c;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+    /* フォントサイズ */
+    font-size: 15px;
+}
+
+/* リセットボタン */
+.reset__button {
+    /* 下線削除 */
+    text-decoration: none;
+    /* 内側の余白 */
+    padding: 10px 20px;
+    /* 文字色 */
+    color: #fff;
+    /* 背景色 */
+    background: #c9afa7;
+    /* フォントサイズ */
+    font-size: 15px;
+}
+
+/* エクスポートボタンとページネーション */
+.form {
+    /* 横並び */
+    display: flex;
+    /* 両端配置 */
+    justify-content: space-between;
+}
+
+/* エクスポートボタン */
+.export-button {
+    /* 内側の余白 */
+    padding: 5px 15px;
+    /* 高さ指定 */
+    height: 40px;
+    /* 枠線なし */
+    border: none;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* 背景色 */
+    background: #e9e3df;
+    /* フォントサイズ */
+    font-size: 15px;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+}
+
+/* 一覧テーブル全体 */
+.admin-table {
+    /* 幅指定 */
+    width: 100%;
+    /* 境界線共有：一本線 */
+    border-collapse: collapse;
+    /* 枠線 */
+    border: 1px solid #ddd;
+    /* テキスト左寄せ */
+    text-align: left;
+    /* フォントサイズ */
+    font-size: 18px;
+}
+
+/* テーブルの見出しセル・値セル */
+.admin-table th,td {
+    /* 内側の余白 */
+    padding: 10px 0 10px 50px;
+    /* 各行の下に線 */
+    border-bottom: 1px solid #ddd;
+}
+
+/* テーブルの見出しセル */
+.admin-table th {
+    /* 背景色 */
+    background: #7f6956;
+    /* 文字色 */
+    color: #fff;
+}
+
+/* テーブルの値セル */
+.admin-table td {
+    /* 高さ */
+    height: 60px;
+    /* 文字色 */
+    color: #6d5b4c;
+}
+
+/* 詳細ボタン：モーダル表示 */
+.detail-button {
+    /* 内側の余白 */
+    padding: 10px 20px;
+    /* フォントサイズ */
+    font-size: 16px;
+    /* 下線削除 */
+    text-decoration: none;
+    /* 文字色 */
+    color: #ddd5ce;
+    /* 背景色 */
+    background: #f9f9f9;
+    /* 枠線 */
+    border: 1px solid #ddd5ce;
+}
+
+/* モーダルウィンドウ表示部分 */
+.modal-overlay {
+    /* 固定配置 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* 表示幅 */
+    width: 100vw;
+    /* 表示高さ */
+    height: 100vh;
+    /* モーダル本体を中央に配置する */
+    display: flex;
+    /* 横中央揃え */
+    justify-content: center;
+    /* 縦中央揃え */
+    align-items: center;
+    /* 前面表示 */
+    z-index: 1000;
+}
+
+/* モーダルウィンドウ本体 */
+.modal__content {
+    /* 背景色 */
+    background: #fff;
+    /* 内側の余白 */
+    padding: 80px 80px 50px;
+    /* 最大幅指定 */
+    max-width: 700px;
+    /* 影 */
+    box-shadow: 5px 5px 5px #9d9d9d;
+    /* 閉じるボタン配置の基準点 */
+    position: relative;
+    /* 枠線 */
+    border: 1px solid #7f6956;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* paddingを含めてサイズ計算 */
+    box-sizing: border-box;
+    /* フォントサイズ */
+    font-size: 16px;
+}
+
+/* モーダル内の閉じるボタン */
+.modal-close {
+    /* 右上配置 */
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    /* サイズ */
+    font-size: 24px;
+    /* 背景なし */
+    background: none;
+    /* 枠線 */
+    border: 1px solid #6d5b4c;
+    /* 丸いボタンに */
+    border-radius: 50%;
+    /* 色 */
+    color: #6d5b4c;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+}
+
+/* モーダル内の各項目 */
+.modal__content p {
+    /* 横並び */
+    display: flex;
+    /* 行間の余白 */
+    margin-bottom: 20px;
+}
+
+/* ラベル表示 */
+.label {
+    /* 太字 */
+    font-weight: bold;
+    /* ラベル幅固定 */
+    width: 150px;
+    /* 幅を保つ */
+    flex-shrink: 0;
+}
+
+/* 値表示 */
+.value {
+    /* ラベルと値間の余白 */
+    margin-left: 20px;
+}
+
+/* モーダル内の削除ボタン */
+.delete-button {
+    /* 余白指定・中央揃え */
+    margin: 60px auto 0;
+    /* 内側の余白 */
+    padding: 5px 20px;
+    display: block;
+    /* フォントサイズ */
+    font-size: 16px;
+    color: #fff;
+    /* 文字色 */
+    background: #ba4545;
+    /* 枠線なし */
+    border: none;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+}
+
+/* ページネーション全体 */
+.custom-pagination {
+    /* 横並び */
+    display: flex;
+    /* 右寄せ配置 */
+    justify-content: flex-end;
+    /* 全体の枠線 */
+    border: 1px solid #ccc;
+    /* 角丸指定 */
+    border-radius: 6px;
+}
+
+/* ページネーション：ページ番号リンク */
+.custom-page-link {
+    /* 中央配置するためにflex指定 */
+    display: flex;
+    /* 縦中央揃え */
+    align-items: center;
+    /* 横中央揃え */
+    justify-content: center;
+    /* 内側の余白 */
+    padding: 3px 8px;
+    /* 枠線 */
+    border: 1px solid #ccc;
+    /* 下線削除 */
+    text-decoration: none;
+    /* 文字色 */
+    color: #7d6a5f;
+    /* 枠線なし */
+    border: none;
+    /* フォントサイズ */
+    font-size: 15px;
+    /* ページ番号を区切るために右線を引く */
+    border-right: 1px solid #ccc;
+}
+
+/* 最後のページ番号の右線を削除 */
+.custom-page-link:last-child {
+    border-right: none;
+}
+
+/* 選択されているページ番号のスタイル */
+.custom-page-link.active {
+    /* 背景色 */
+    background: #7d6a5f;
+    /* 文字色 */
+    color: #fff;
+}
+

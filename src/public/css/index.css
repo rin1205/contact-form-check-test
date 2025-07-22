@@ -1,0 +1,265 @@
+/* フォーム全体 */
+.contact-form__content {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* 余白 */
+    padding: 30px;
+    /* 最大幅指定 */
+    max-width: 850px;
+}
+
+/* 見出しデザイン */
+.contact-form__heading {
+    /* 見出し下の余白 */
+    margin-bottom: 40px;
+    /* テキスト中央揃え */
+    text-align: center;
+    /* 文字色指定 */
+    color: #6d5b4c;
+    /* 見出しフォント指定 */
+    font-family: 'Spectral', serif;
+    /* 見出しフォントサイズ */
+    font-size: 22px;
+}
+
+/* フォーム全体 */
+.form {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* フォーム全体の文字色 */
+    color: #4a3c30;
+    /* フォーム全体のフォント */
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, sans-serif;
+}
+
+/* ラベル＋入力欄 */
+.form__group {
+    /* 横並び */
+    display: flex;
+    /* ラベルと入力欄を両端揃えで均等に配置 */
+    justify-content: space-between;
+    /* 下に余白 */
+    margin-bottom: 20px;
+}
+
+/* ラベルグループ */
+.form__group-title {
+    /* 幅指定 */
+    width: 20%;
+}
+
+/* 必須マーク */
+.form__label--required {
+    /* マークカラー */
+    color: #ff0000;
+    /* マークフォントサイズ */
+    font-size: 14px;
+    /* ラベルとの間に余白 */
+    margin-left: 5px;
+}
+
+/* 入力欄＋エラーメッセージ */
+.form__group-content {
+    /* 幅指定 */
+    width: 75%;
+}
+
+/* 入力欄 */
+.form__input--text {
+    /* 横並び */
+    display: flex;
+}
+
+/* エラーメッセージ */
+.form__error {
+    /* エラーカラー */
+    color: #ff0000;
+    /* テキスト左揃え */
+    text-align: left;
+    /* 上に余白 */
+    margin-top: 5px;
+}
+
+/* 性別のラジオボタン全体 */
+.radio-group {
+    /* 横並び */
+    display: flex;
+    /* 折り返し可能に */
+    flex-wrap: wrap;
+    /* 要素間の間隔 */
+    gap: 10px;
+    /* 上下に余白 */
+    margin: 5px 0;
+}
+
+/* ラジオボタンの標準スタイルを非表示に */
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+/* ラジオボタン＋テキスト */
+.custom-radio {
+    /* radio-mark配置の基準点 */
+    position: relative;
+    /* ラジオボタン用の余白 */
+    padding-left: 30px;
+    /* フォントサイズ */
+    font-size: 16px;
+    /* 最小幅指定（レスポンシブ対策） */
+    min-width: 80px;
+    /* ボタンとテキスト横並び */
+    display: flex;
+    /* ボタンとテキストを縦中央揃え */
+    align-items: center;
+}
+
+/* ラジオボタンの枠 */
+.radio-mark {
+    /* custom-radioを基準に配置 */
+    position: absolute;
+    /* 左端に配置 */
+    left: 0;
+    /* 垂直中央 */
+    top: 50%;
+    /* 中央揃え */
+    transform: translateY(-50%);
+    /* 幅 */
+    width: 18px;
+    /* 高さ */
+    height: 18px;
+    /* 枠線 */
+    border: 1px solid #8b7969;
+    /* 丸く */
+    border-radius: 50%;
+    /* 背景色 */
+    background: #fff;
+}
+
+/* 選択時のラジオボタン */
+.custom-radio input[type="radio"]:checked + .radio-mark::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* 選択時のカラー */
+    background: #8b7969;
+}
+
+/* 種類選択セレクトボックス */
+.select-box__item {
+    /* 高さ指定 */
+    height: 40px;
+    /* 文字色 */
+    color: #917e6f;
+    /* フォント */
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, sans-serif;
+}
+
+/* プレースホルダーの文字色 */
+::placeholder {
+    color: #917e6f;
+}
+
+/* フォームグループ間の余白 */
+.form__group {
+    margin-bottom: 20px;
+}
+
+/* 送信ボタン */
+.form__button {
+    /* 上に余白 */
+    margin-top: 50px;
+    /* 中央揃え */
+    text-align: center;
+}
+
+/* 送信ボタンデザイン */
+.form__button-submit {
+    /* ボタン内側の余白 */
+    padding: 10px 30px;
+    /* 枠線なし */
+    border: none;
+    /* 背景色 */
+    background: #745f4d;
+    /* 文字色 */
+    color: #fff;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+    /* フォントサイズ */
+    font-size: 16px;
+}
+
+/* 入力欄 */
+.form__input--text input {
+    /* 高さ指定 */
+    height: 30px;
+    /* 右側に余白 */
+    margin-right: 20px;
+    /* 親要素の幅いっぱいに広げる */
+    width: 100%;
+}
+
+/* 電話番号の入力欄を中央揃えに */
+.tel-input {
+    text-align: center;
+}
+
+/* 電話番号入力欄：ハイフン位置調整 */
+.form__input--text span {
+    margin: 0 5px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+/* お問合せ内容テキストエリア */
+.form__input--textarea textarea {
+    /* 親要素の幅いっぱいに広げる */
+    width: 100%;
+    /* 高さ指定 */
+    height: 120px;
+    /* リサイズなし */
+    resize: none;
+    /* フォント指定 */
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, sans-serif;
+}
+
+/* 入力欄共通 */
+.form__input--text input,
+.form__input--textarea textarea,
+.select-box__item {
+    /* 内側の余白 */
+    padding: 5px 20px;
+    /* 最大幅指定 */
+    max-width: 600px;
+    /* 背景色 */
+    background: #ebebeb;
+    /* 枠線なし */
+    border: none;
+    /* 角丸 */
+    border-radius: 4px;
+    /* フォントサイズ指定 */
+    font-size: 14px;
+}
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .form__group {
+        /* 縦並び */
+        flex-direction: column;
+    }
+
+    .form__group-title,
+    .form__group-content {
+        width: 100%;
+    }
+
+    .form__input-wrapper {
+        width: 100%;
+    }
+}

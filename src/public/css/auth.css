@@ -1,0 +1,143 @@
+/* ページ全体の背景色指定 */
+body {
+    background: #eae4df;
+}
+
+/* フォーム全体 */
+.auth-form__content {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* 内側の余白 */
+    padding: 20px;
+    /* 最大幅指定 */
+    max-width: 700px;
+    /* 文字色 */
+    color: #6d5b4c;
+}
+
+/* 見出しデザイン */
+.auth-form__heading {
+    /* 見出し下の余白 */
+    margin-bottom: 40px;
+    /* テキスト中央寄せ */
+    text-align: center;
+    /* 文字色 */
+    color: #6d5b4c;
+    /* フォント指定 */
+    font-family: 'Spectral', serif;
+    /* フォントサイズ */
+    font-size: 22px;
+}
+
+/* フォーム本体 */
+.form {
+    /* 中央寄せ */
+    margin: 0 auto;
+    /* 内側の余白 */
+    padding: 30px 120px;
+    /* 背景色 */
+    background: #fff;
+    /* 枠線 */
+    border: 1px solid #baa594;
+    /* 角丸 */
+    border-radius: 10px;
+    /* フォント指定 */
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, sans-serif;
+}
+
+/* フォーム内の各項目 */
+.form__group {
+    display: flex;
+    /* 縦並び */
+    flex-direction: column;
+    /* 上下に余白 */
+    margin: 30px 0;
+    /* テキスト左寄せ */
+    text-align: left;
+}
+
+/* ラベル表示 */
+.form__group-title {
+    /* 下に余白 */
+    padding-bottom: 10px;
+    /* フォントサイズ */
+    font-size: 22px;
+}
+
+/* プレースホルダーの文字色指定 */
+::placeholder {
+    color: #917e6f;
+}
+
+/* 入力欄 */
+.form__input--text input {
+    /* 内側に余白 */
+    padding: 10px 20px;
+    /* 高さ指定 */
+    height: 50px;
+    /* 幅指定 */
+    width: 100%;
+    /* 背景色 */
+    background: #ebebeb;
+    /* 枠線なし */
+    border: none;
+    /* フォントサイズ */
+    font-size: 14px;
+    /* paddingを含めてサイズ調整 */
+    box-sizing: border-box;
+}
+
+/* エラーメッセージ表示 */
+.form__error {
+    /* 文字色 */
+    color: #ff0000;
+    /* テキスト左寄せ */
+    text-align: left;
+    /* 上に余白 */
+    margin-top: 5px;
+}
+
+/* 登録ボタン */
+.form__button-register {
+    /* 余白 */
+    margin: 50px 0 20px 0;
+    /* 中央寄せ */
+    text-align: center;
+}
+
+/* ログインボタン */
+.form__button-login {
+    /* 余白 */
+    margin: 70px 0 40px 0;
+    /* 中央寄せ */
+    text-align: center;
+}
+
+/* ボタン */
+.form__button-submit {
+    /* 内側の余白 */
+    padding: 10px 30px;
+    /* 枠線なし */
+    border: none;
+    /* 背景色 */
+    background: #745f4d;
+    /* 文字色 */
+    color: #fff;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+    /* フォントサイズ */
+    font-size: 16px;
+}
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .auth-form__content {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .form {
+        padding: 20px;
+    }
+}

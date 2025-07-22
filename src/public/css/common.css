@@ -1,0 +1,84 @@
+/* ブラウザ全体の余白をなくす */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+.header {
+    /* 子要素配置の基準点 */
+    position: relative;
+    /* ヘッダー下線指定 */
+    border-bottom: 1px solid #dac8ba;
+    /* 背景色 */
+    background: #fff;
+    /* 高さ指定 */
+    height: 80px;
+}
+
+/* ヘッダー内部 */
+.header__inner {
+    /* 上下左右の余白 */
+    padding: 10px 15px;
+    /* テキスト中央揃え */
+    text-align: center;
+}
+
+/* ヘッダーロゴ */
+.header__logo {
+    /* 親要素を基準に配置 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 中央揃え */
+    transform: translate(-50%,-50%);
+    /* 文字色 */
+    color: #6d5b4c;
+    /* リンクの下線削除 */
+    text-decoration: none;
+    /* フォントサイズ */
+    font-size: 38px;
+    /* フォント指定 */
+    font-family: 'Spectral', serif;
+}
+
+/* ヘッダーナビゲーション */
+.header-nav {
+    /* 親要素を基準に配置 */
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    /* 縦中央調整 */
+    transform: translateY(-50%);
+}
+
+/* ナビゲーションリンク・ボタン */
+.header-nav__link,
+.header-nav__button {
+    /* 右寄せ */
+    float: right;
+    /* 内側の余白 */
+    padding: 0 10px;
+    /* 文字色 */
+    color: #ddd5ce;
+    /* 背景色 */
+    background: #f3f2f2;
+    /* フォントサイズ */
+    font-size: 18px;
+    /* 枠線 */
+    border: 1px solid #ddd5ce;
+    /* リンクの下線削除 */
+    text-decoration: none;
+    /* フォント指定 */
+    font-family: 'Spectral', serif;
+    /* ホバー時にポインター表示 */
+    cursor: pointer;
+}
+/*
+.form__button-submit {
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    background: #f0e7df;
+}
+     */
