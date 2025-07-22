@@ -72,39 +72,13 @@
     /* 基本幅150px：余白に応じて伸縮 */
     flex: 1 1 150px;
 }
-/*
-/* ▼ を追加するためのラッパー
-.selectbox {
-    position: relative;
-    flex: 1 1 150px;
-}
- */
-/* ▼ のデザイン（border版）
-.selectbox::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #6d5b4c;
-    border-left: 2px solid #6d5b4c;
-    transform: translateY(-50%) rotate(-135deg);
-    pointer-events: none;
-}
- */
+
 /* セレクトボックス本体 */
 .selectbox select {
-    /*デフォルトの矢印削除
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     /* 幅指定 */
     width: 100%;
     /* 内側の余白 */
     padding: 10px;
-    /* 
-    padding-right: 30px; /* ▼の分の余白を確保 */
     /* 枠線 */
     border: 1px solid #ddd5ce;
     /* 背景色 */
